@@ -1,0 +1,34 @@
+---
+title: 'Why Astro is Great for Blogs'
+description: 'A deep dive into the features that make Astro a perfect choice for content sites.'
+pubDate: 2024-12-05
+tags: ['astro', 'webdev']
+author: 'My Blog Author'
+---
+
+Astro has quickly become one of the most popular frameworks for building content-focused websites. Let's explore why.
+
+## Islands Architecture
+
+Astro's islands architecture allows you to sprinkle in interactive components only where needed. The rest of your page remains static HTML, resulting in blazing fast load times.
+
+## Content Collections
+
+With Astro's content collections, you get:
+
+1. Type-safe frontmatter using Zod schemas
+2. Automatic slugs and routing
+3. Built-in sorting and filtering
+
+```js
+import { getCollection } from 'astro:content';
+const posts = await getCollection('blog');
+```
+
+## MDX Support
+
+MDX lets you write JSX components directly in your markdown. This is incredibly powerful for adding interactive demos, callouts, or custom layouts within your posts.
+
+## Conclusion
+
+If you're building a blog, documentation site, or marketing page, Astro should be at the top of your list.

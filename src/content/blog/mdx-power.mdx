@@ -1,0 +1,36 @@
+---
+title: 'The Power of MDX'
+description: 'Demonstrating how MDX blends markdown and JSX for rich content experiences.'
+pubDate: 2024-12-10
+tags: ['mdx', 'react']
+author: 'My Blog Author'
+---
+
+import Callout from '../../components/Callout.astro';
+
+MDX is a game-changer for writing content. It lets you use JSX components directly inside your markdown files, opening up endless possibilities for interactive and rich content.
+
+## Custom Components in Markdown
+
+In this post, we'll use a custom Astro component right here in the markdown. Notice how seamlessly it blends with the surrounding text.
+
+### Example Component
+
+Below is a simple custom component that we can reuse across posts. This is the power of MDX — your content and your components live together.
+
+<Callout type="info">
+  This is an <strong>info callout</strong> written using an Astro component inside an MDX file! You can pass props and create reusable components across all your posts.
+</Callout>
+
+<Callout type="warning">
+  Here's a <strong>warning callout</strong> using the same component with a different prop value. No need to duplicate markup.
+</Callout>
+
+## Why MDX Matters
+
+- **Reusability**: Define components once, use them everywhere
+- **Interactivity**: Embed live demos, interactive charts, or quizzes
+- **Familiarity**: Write in markdown syntax when you don't need components
+- **Flexibility**: Mix and match static content and dynamic UI
+
+MDX bridges the gap between authoring and engineering, making it perfect for modern content sites.
