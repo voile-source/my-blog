@@ -1,0 +1,19 @@
+---
+interface Props {
+  type?: 'info' | 'warning' | 'success';
+}
+
+const { type = 'info' } = Astro.props;
+
+const colors = {
+  info: { bg: '#e8f0fe', border: '#2d6cdf' },
+  warning: { bg: '#fff4e5', border: '#f59e0b' },
+  success: { bg: '#e6f4ea', border: '#34a853' },
+};
+
+const style = colors[type] || colors.info;
+---
+
+<div style={`background: ${style.bg}; border-left: 4px solid ${style.border}; padding: 1rem 1.25rem; border-radius: 0 6px 6px 0; margin-bottom: 1.5rem;`}>
+  <slot />
+</div>

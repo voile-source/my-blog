@@ -1,0 +1,12 @@
+---
+---
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="logo">My Blog</a>
+    <nav>
+      <a href="/" aria-current={Astro.url.pathname === '/' ? 'page' : undefined}>Home</a>
+      <a href="/blog" aria-current={Astro.url.pathname === '/blog' ? 'page' : undefined}>Blog</a>
+      <a href="/about" aria-current={Astro.url.pathname === '/about' ? 'page' : undefined}>About</a>
+    </nav>
+  </div>
+</header>
